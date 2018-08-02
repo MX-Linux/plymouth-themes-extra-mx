@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Wed, 01 Aug 2018 20:08:02 -0500
+Source: plymouth-themes-extra-mx
+Binary: plymouth-themes-extra-mx
+Architecture: source all
+Version: 18.8.01
+Distribution: mx
+Urgency: medium
+Maintainer: dolphin oracle <dolphinoracle@gmail.com>
+Changed-By: Dolphin Oracle <dolphinoracle@gmail.com>
+Description:
+ plymouth-themes-extra-mx - Extra plymouth themes packaged by MX team
+Changes:
+ plymouth-themes-extra-mx (18.8.01) mx; urgency=medium
+ .
+   * initial releasee
+Checksums-Sha1:
+ fe744916543244b8fd43f302ae1aaa28d4ab12f6 628 plymouth-themes-extra-mx_18.8.01.dsc
+ 305219b4eed74b8b32422f87a02a98d3d1674135 5476048 plymouth-themes-extra-mx_18.8.01.tar.xz
+ cc8f30756de342e6ebd7755c04f0311470222615 5469060 plymouth-themes-extra-mx_18.8.01_all.deb
+ 772af9afd0c0147460e8ad28b43eeb4ca256c62d 5064 plymouth-themes-extra-mx_18.8.01_amd64.buildinfo
+Checksums-Sha256:
+ 0b11f0fa488b0a1bdc4d20bb011fe695213efcb405b3cdd5b170bd200590e103 628 plymouth-themes-extra-mx_18.8.01.dsc
+ 1979c1c4738872d80a148982917463bef2f445e7e980f4cecadf2e8d4e7cf640 5476048 plymouth-themes-extra-mx_18.8.01.tar.xz
+ e3909ad14cb67ae0eec1f97d0ac2cf7a734afcdd6f8a295f26bdd7e662f25e88 5469060 plymouth-themes-extra-mx_18.8.01_all.deb
+ 9d4f72d40487d2072c62abb5152767bd71415cd3db228ddbcb176561fd81010e 5064 plymouth-themes-extra-mx_18.8.01_amd64.buildinfo
+Files:
+ 3f48255612a9a17ae5aea385f24d8a15 628 admin extra plymouth-themes-extra-mx_18.8.01.dsc
+ c45d3a9b2b2c332e0b915dd450f28894 5476048 admin extra plymouth-themes-extra-mx_18.8.01.tar.xz
+ 3beef0f03af85abf23014ae906e5edc1 5469060 admin extra plymouth-themes-extra-mx_18.8.01_all.deb
+ d957309ee309925dadd723d8720cdefc 5064 admin extra plymouth-themes-extra-mx_18.8.01_amd64.buildinfo
