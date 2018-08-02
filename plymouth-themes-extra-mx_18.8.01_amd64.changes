@@ -15,17 +15,17 @@ Changes:
  .
    * initial releasee
 Checksums-Sha1:
- fe744916543244b8fd43f302ae1aaa28d4ab12f6 628 plymouth-themes-extra-mx_18.8.01.dsc
- 305219b4eed74b8b32422f87a02a98d3d1674135 5476048 plymouth-themes-extra-mx_18.8.01.tar.xz
- cc8f30756de342e6ebd7755c04f0311470222615 5469060 plymouth-themes-extra-mx_18.8.01_all.deb
- 772af9afd0c0147460e8ad28b43eeb4ca256c62d 5064 plymouth-themes-extra-mx_18.8.01_amd64.buildinfo
+ 26f48e659e8f211374501adbc678e021c10b36dd 628 plymouth-themes-extra-mx_18.8.01.dsc
+ f19d661c81a564090ab91134f2716555c07610a8 5476088 plymouth-themes-extra-mx_18.8.01.tar.xz
+ 3f6f586d61217ae145f8d41c4fcacd141e9a4bca 5469032 plymouth-themes-extra-mx_18.8.01_all.deb
+ d143bd53d339e908387750fcf37568a7f0758db9 5064 plymouth-themes-extra-mx_18.8.01_amd64.buildinfo
 Checksums-Sha256:
- 0b11f0fa488b0a1bdc4d20bb011fe695213efcb405b3cdd5b170bd200590e103 628 plymouth-themes-extra-mx_18.8.01.dsc
- 1979c1c4738872d80a148982917463bef2f445e7e980f4cecadf2e8d4e7cf640 5476048 plymouth-themes-extra-mx_18.8.01.tar.xz
- e3909ad14cb67ae0eec1f97d0ac2cf7a734afcdd6f8a295f26bdd7e662f25e88 5469060 plymouth-themes-extra-mx_18.8.01_all.deb
- 9d4f72d40487d2072c62abb5152767bd71415cd3db228ddbcb176561fd81010e 5064 plymouth-themes-extra-mx_18.8.01_amd64.buildinfo
+ 40736d818e2a973bb868b4b9ac9e413a46c6dec1ea86e39d19a0e221d0f666dc 628 plymouth-themes-extra-mx_18.8.01.dsc
+ d7a081252c3c5d6fc9ce0becdc9029e1c3a96482c0477c00e3647ab7d79719dd 5476088 plymouth-themes-extra-mx_18.8.01.tar.xz
+ 1ec5a9c59a21010fb12ef178a58a4fd86ca73d078d2f5cb71896cf62a7a281cd 5469032 plymouth-themes-extra-mx_18.8.01_all.deb
+ 4c0ee6650d0c0ebe1b4adb393093bb55858575b7ad8de16834213dcf608b355c 5064 plymouth-themes-extra-mx_18.8.01_amd64.buildinfo
 Files:
- 3f48255612a9a17ae5aea385f24d8a15 628 admin extra plymouth-themes-extra-mx_18.8.01.dsc
- c45d3a9b2b2c332e0b915dd450f28894 5476048 admin extra plymouth-themes-extra-mx_18.8.01.tar.xz
- 3beef0f03af85abf23014ae906e5edc1 5469060 admin extra plymouth-themes-extra-mx_18.8.01_all.deb
- d957309ee309925dadd723d8720cdefc 5064 admin extra plymouth-themes-extra-mx_18.8.01_amd64.buildinfo
+ f77e8310c1b610a3ebea9b839fe5933a 628 admin extra plymouth-themes-extra-mx_18.8.01.dsc
+ a9a98ca67e3cd3896ceec77a6c1345f4 5476088 admin extra plymouth-themes-extra-mx_18.8.01.tar.xz
+ f5e36c98b724dcdbd641a9484acda9e9 5469032 admin extra plymouth-themes-extra-mx_18.8.01_all.deb
+ a9d9ac863905fb0bf7d5d9f04e38af83 5064 admin extra plymouth-themes-extra-mx_18.8.01_amd64.buildinfo
