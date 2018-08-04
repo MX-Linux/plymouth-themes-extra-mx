@@ -7,5 +7,5 @@ Standards-Version: 3.9.3
 
 Package: plymouth-themes-extra-mx
 Architecture: all
-Depends: ${misc:Depends}
+Depends: ${misc:Depends}, plymouth-themes
 Description: Extra plymouth themes packaged by MX team

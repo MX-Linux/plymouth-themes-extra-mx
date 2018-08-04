@@ -9,8 +9,8 @@ Build-Depends: debhelper (>= 8.0.0)
 Package-List:
  plymouth-themes-extra-mx deb admin extra arch=all
 Checksums-Sha1:
- 37f496774a0dd3ace8dfbfa96797a2b709c637bf 6392564 plymouth-themes-extra-mx_18.8.01.tar.xz
+ 7d0e4bf4e584a101dbeabeb40106659730a98bd9 6392596 plymouth-themes-extra-mx_18.8.01.tar.xz
 Checksums-Sha256:
- 916ad9143d2ad9f020d74ba209dc3fda34f394307a7d32a45370ce5fc9e0178a 6392564 plymouth-themes-extra-mx_18.8.01.tar.xz
+ a963d389247ec6d80ef6a7cbac9ba240a3f6840150e1931bab47733e8b8047a2 6392596 plymouth-themes-extra-mx_18.8.01.tar.xz
 Files:
- 62c4d306592de5904ff26e68e384741d 6392564 plymouth-themes-extra-mx_18.8.01.tar.xz
+ 532bb565face834104a7b2fd358aa542 6392596 plymouth-themes-extra-mx_18.8.01.tar.xz
