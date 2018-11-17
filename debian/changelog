@@ -1,3 +1,15 @@
+plymouth-themes-mx (18.11.01) mx; urgency=medium
+
+  * updated themes, elegant-blue, elegant-wine 
+
+ -- dolphin <dolphin@littlebyte>  Sat, 17 Nov 2018 17:42:46 -0500
+
+plymouth-themes-mx (18.8.02) mx; urgency=medium
+
+  * change name of package 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sun, 05 Aug 2018 13:10:02 -0400
+
 plymouth-themes-extra-mx (18.8.01) mx; urgency=medium
 
   * initial releasee
