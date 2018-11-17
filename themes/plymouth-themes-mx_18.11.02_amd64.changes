@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Sat, 17 Nov 2018 18:30:25 -0500
+Source: plymouth-themes-mx
+Binary: plymouth-themes-mx
+Architecture: source all
+Version: 18.11.02
+Distribution: mx
+Urgency: medium
+Maintainer: dolphin oracle <dolphinoracle@gmail.com>
+Changed-By: dolphin <dolphin@littlebyte>
+Description:
+ plymouth-themes-mx - Extra plymouth themes packaged by MX team
+Changes:
+ plymouth-themes-mx (18.11.02) mx; urgency=medium
+ .
+   * added ribbon theme
+Checksums-Sha1:
+ 0bc72092abef8c93f2c04d409c1dca83ab986867 596 plymouth-themes-mx_18.11.02.dsc
+ 1b3391daaa3a8a819f6f8ff5465ad49d13699442 7173380 plymouth-themes-mx_18.11.02.tar.xz
+ 81d2d89a4b29ccf8bf8a59e49488ddaf0fbdb2ce 7166648 plymouth-themes-mx_18.11.02_all.deb
+ 5fb292b8e08b47c94edf03124937680626590171 5015 plymouth-themes-mx_18.11.02_amd64.buildinfo
+Checksums-Sha256:
+ 5c3cc1d67f9de8d07b5f66fa5e1a05b76152a34be07b5fac4a0b8a2c59ff2970 596 plymouth-themes-mx_18.11.02.dsc
+ 7e79399ef7e2157efd2017fb0077e2564063a45b2195edbdf608e7ac2c1ffbfa 7173380 plymouth-themes-mx_18.11.02.tar.xz
+ 7c27aeb257abd2906fc0a249e3a83ab5d44436d9dcd101f0612db13a62771d4d 7166648 plymouth-themes-mx_18.11.02_all.deb
+ 313bdd9e492a8c5967c4f285474402eeb4999a9e7a54967deb71cd7f1b5517da 5015 plymouth-themes-mx_18.11.02_amd64.buildinfo
+Files:
+ db0a82b8b6de26368adcf93bc770f779 596 admin extra plymouth-themes-mx_18.11.02.dsc
+ e2296b327f3ac16b3badcd4d332369db 7173380 admin extra plymouth-themes-mx_18.11.02.tar.xz
+ 961be4715934c7cf6cc5418871fd10ea 7166648 admin extra plymouth-themes-mx_18.11.02_all.deb
+ 8cb8f9ef4033b29530f056f0ee699685 5015 admin extra plymouth-themes-mx_18.11.02_amd64.buildinfo

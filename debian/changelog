@@ -1,3 +1,9 @@
+plymouth-themes-mx (18.11.02) mx; urgency=medium
+
+  * added ribbon theme
+
+ -- dolphin <dolphin@littlebyte>  Sat, 17 Nov 2018 18:30:25 -0500
+
 plymouth-themes-mx (18.11.01) mx; urgency=medium
 
   * updated themes, elegant-blue, elegant-wine 
