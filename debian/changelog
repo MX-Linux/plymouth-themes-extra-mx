@@ -1,3 +1,9 @@
+plymouth-themes-mx (19.07.01) mx; urgency=medium
+
+  * update for buster 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sun, 21 Jul 2019 19:17:30 -0400
+
 plymouth-themes-mx (18.12.03) mx; urgency=medium
 
   * updated progress bars 
