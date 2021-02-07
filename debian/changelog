@@ -1,3 +1,9 @@
+plymouth-themes-mx (21.02.01) mx; urgency=medium
+
+  * add futureprototype-mx (mx version of futureprototype)
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sun, 07 Feb 2021 12:35:19 -0500
+
 plymouth-themes-mx (19.07.01) mx; urgency=medium
 
   * update for buster 
