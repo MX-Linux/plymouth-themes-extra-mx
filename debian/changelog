@@ -1,3 +1,9 @@
+plymouth-themes-mx (21.09.01) mx; urgency=medium
+
+  * add mx21 defualt (elegant-linen-grey) 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sun, 26 Sep 2021 15:01:42 -0400
+
 plymouth-themes-mx (21.02.01) mx; urgency=medium
 
   * add futureprototype-mx (mx version of futureprototype)
