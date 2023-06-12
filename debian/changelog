@@ -1,3 +1,9 @@
+plymouth-themes-mx (23.06.01) mx; urgency=medium
+
+  * update images and scripts for MXLiveLogo
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Mon, 12 Jun 2023 06:59:30 -0400
+
 plymouth-themes-mx (23.02.01) mx; urgency=medium
 
   * add MXLiveLogo
