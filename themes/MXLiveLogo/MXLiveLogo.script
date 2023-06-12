@@ -3,9 +3,9 @@
 ## Version: 230611aa
 ##
 ## 1) Create and copy all of these files to 
-##    /usr/share/plymouth/themes/MXLive
+##    /usr/share/plymouth/themes/MXLiveLogo
 ## 2) set these files into use with the following command
-##    sudo plymouth-set-default-theme MXLive -R  
+##    sudo plymouth-set-default-theme MXLiveLogo -R  
 
 // Screen size
 screen.w = Window.GetWidth();
