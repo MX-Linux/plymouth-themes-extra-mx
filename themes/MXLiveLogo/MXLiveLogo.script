@@ -1,6 +1,6 @@
 ## Author : CharlesV
 ## Mail : 
-## Version: 230210aa
+## Version: 230611aa
 ##
 ## 1) Create and copy all of these files to 
 ##    /usr/share/plymouth/themes/MXLive
@@ -37,7 +37,7 @@ state.time = 1.0;
 //--------------------------------- Refresh (Logo animation) --------------------------
 
 // Number of shutdown images and max times through the call back ( stops displaying again ) 
-numShutdownImages = 61;
+numShutdownImages = 51;
 maxCallBackShutdown = 100;
 
 // Number of startup images and max times through the call back ( stops displaying again ) 
