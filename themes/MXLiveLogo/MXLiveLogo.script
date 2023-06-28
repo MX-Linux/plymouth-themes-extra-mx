@@ -1,13 +1,12 @@
-
 ## Script : CharlesV
 ## Artwork: Freja
 ## Mail : 
-## Version: 230620aa
+## Version: 230628ad
 ##
 ## 1) Create and copy all of these files to 
 ##    /usr/share/plymouth/themes/MXLiveLogo
 ## 2) set these files into use with the following command
-##    sudo plymouth-set-default-theme MXLiveLogo -R  
+##    sudo plymouth-set-default-theme  -R  MXLiveLogo
 
 // Screen size
 screen.w = Window.GetWidth();
@@ -16,7 +15,7 @@ screen.half.w = Window.GetWidth() / 2;
 screen.half.h = Window.GetHeight() / 2;
 
 
-// You can gradient the screen bychanging the top and bottom colors. 
+// You can gradient the screen by changing the top and bottom colors. 
 Window.SetBackgroundTopColor(0.14, 0.14, 0.14);
 Window.SetBackgroundBottomColor(0.14, 0.14, 0.14);
 
@@ -28,17 +27,19 @@ logo.sprite.SetZ (10000);
 
 // Flow
 state.status = "play";
-state.time = 1.0;
+state.time = 6.0;
 
 //--------------------------------- Refresh (Logo animation) --------------------------
 
 // Number of shutdown images and max times through the call back ( stops displaying again ) 
-numShutdownImages = 51;
-maxCallBackShutdown = 120;
+numShutdownImages = 36;
+maxCallBackShutdown = 78;
 
 // Number of startup images and max times through the call back ( stops displaying again ) 
 numStartupImages = 71;
 maxCallBackStartup = 140;
+
+iDisplayPerImage = 2;
 
 # cycle through all images
 if (Plymouth.GetMode () == "boot")
@@ -68,14 +69,16 @@ fun refresh_callback ()
     if (Plymouth.GetMode () == "boot")
       {
         if ( progress <= maxCallBackStartup )
-          flyingman_sprite.SetImage(flyingman_image[progress]);
+//          flyingman_sprite.SetImage(flyingman_image[Math.Int(progress / 2) % maxCallBackStartup]);
+          flyingman_sprite.SetImage(flyingman_image[Math.Int(progress / iDisplayPerImage) % maxCallBackStartup]);
         progress++;
       }
 
     if (Plymouth.GetMode () == "shutdown")
       {
         if ( progress <= maxCallBackShutdown )
-          flyingman_sprite.SetImage(flyingman_image[progress]);
+//          flyingman_sprite.SetImage(flyingman_image[Math.Int(progress / 2) % maxCallBackShutdown]);
+          flyingman_sprite.SetImage(flyingman_image[Math.Int(progress / iDisplayPerImage) % maxCallBackShutdown]);
         progress++;
       }
         
@@ -192,9 +195,9 @@ fun progress_callback (duration, progress)
   {
     if (progress_bar.image.GetWidth () != Math.Int (progress_bar.original_image.GetWidth () * progress))
       {
-        #/*- Uncomment out the net two lines to display the progress bar -*/
-        //progress_bar.image = progress_bar.original_image.Scale(progress_bar.original_image.GetWidth(progress_bar.original_image) * progress, progress_bar.original_image.GetHeight());
-        //progress_bar.sprite.SetImage (progress_bar.image);
+        #/*- Uncomment the next two lines to display the progress bar -*/
+        // progress_bar.image = progress_bar.original_image.Scale(progress_bar.original_image.GetWidth(progress_bar.original_image) * progress, progress_bar.original_image.GetHeight());
+        // progress_bar.sprite.SetImage (progress_bar.image);
       }
   }
 
