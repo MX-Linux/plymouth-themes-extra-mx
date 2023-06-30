@@ -1,3 +1,9 @@
+plymouth-themes-mx (23.06.06) mx; urgency=medium
+
+  * do not rebuild initramfs while running live 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 30 Jun 2023 19:03:00 -0400
+
 plymouth-themes-mx (23.06.05) mx; urgency=medium
 
   * update MXLiveLogo, addresses frozen graphic on some systems
