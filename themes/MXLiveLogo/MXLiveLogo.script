@@ -1,7 +1,7 @@
 ## Script : CharlesV
 ## Artwork: Freja
 ## Mail : 
-## Version: 230628ad
+## Version: 230704ac
 ##
 ## 1) Create and copy all of these files to 
 ##    /usr/share/plymouth/themes/MXLiveLogo
@@ -14,30 +14,28 @@ screen.h = Window.GetHeight();
 screen.half.w = Window.GetWidth() / 2;
 screen.half.h = Window.GetHeight() / 2;
 
-
-// You can gradient the screen by changing the top and bottom colors. 
+ 
+// You can gradient the screen bychanging the top and bottom colors. 
 Window.SetBackgroundTopColor(0.14, 0.14, 0.14);
 Window.SetBackgroundBottomColor(0.14, 0.14, 0.14);
 
 
-logo.image = Image("logo.png");
-logo.sprite = Sprite(logo.image);
-logo.sprite.SetZ (10000);
-
-
-// Flow
-state.status = "play";
-state.time = 6.0;
-
 //--------------------------------- Refresh (Logo animation) --------------------------
 
 // Number of shutdown images and max times through the call back ( stops displaying again ) 
-numShutdownImages = 36;
-maxCallBackShutdown = 78;
+numShutdownImages = 71;
+maxCallBackShutdown = 160;
 
 // Number of startup images and max times through the call back ( stops displaying again ) 
 numStartupImages = 71;
-maxCallBackStartup = 140;
+maxCallBackStartup = 160;
+
+// Set images to % of the screen size 
+scaleFactorH = 0.7;  // Height = 70%
+
+// Account for Screen Ratio 
+scaleFactorW = scaleFactorH - (screen.w / screen.h / 10 ) - (screen.w / screen.h / 10 * 0.5 );
+
 
 iDisplayPerImage = 2;
 
@@ -45,23 +43,39 @@ iDisplayPerImage = 2;
 if (Plymouth.GetMode () == "boot")
 {
   for (i = 0; i < numStartupImages; i++)
-  flyingman_image[i] = Image("startup-" + i + ".png");
+  {
+  #flyingman_image[i] = Image("startup-" + i + ".png");
+    
+    # Load an image
+    rawImage = Image("startup-" + i + ".png");
+    
+    # Scale the image to our window size
+    scaledImage[i] = rawImage.Scale(screen.w * scaleFactorW, screen.h * scaleFactorH);
+      
+  }
 }
 
 if (Plymouth.GetMode () == "shutdown")
 {
   for (i = 0; i < numShutdownImages; i++)
-  flyingman_image[i] = Image("shutdown-" + i + ".png");
+  {
+    # Load an image
+    rawImage = Image("shutdown-" + i + ".png");
+    
+    # Scale the image to our window size
+    scaledImage[i] = rawImage.Scale(screen.w * scaleFactorW, screen.h * scaleFactorH);                                         
+
+  }
 }
 
 
 flyingman_sprite = Sprite();
 
 
-# set image position
-# Place images in the center
-flyingman_sprite.SetX(Window.GetX() + (Window.GetWidth() / 2 - flyingman_image[0].GetWidth() / 2)); 
-flyingman_sprite.SetY(Window.GetY() + (Window.GetHeight() / 2 - flyingman_image[0].GetHeight() / 2));
+// set image position
+// Place images in the center
+flyingman_sprite.SetX(Window.GetX() + (screen.w / 2 - scaledImage[0].GetWidth() / 2)); 
+flyingman_sprite.SetY(Window.GetY() + (screen.h / 2 - scaledImage[0].GetHeight() / 2));
 
 progress = 0;
 fun refresh_callback ()
@@ -69,16 +83,19 @@ fun refresh_callback ()
     if (Plymouth.GetMode () == "boot")
       {
         if ( progress <= maxCallBackStartup )
-//          flyingman_sprite.SetImage(flyingman_image[Math.Int(progress / 2) % maxCallBackStartup]);
-          flyingman_sprite.SetImage(flyingman_image[Math.Int(progress / iDisplayPerImage) % maxCallBackStartup]);
+        {
+          flyingman_sprite.SetImage(scaledImage[Math.Int(progress / iDisplayPerImage) % maxCallBackStartup]);
+        } 
+         
         progress++;
       }
 
     if (Plymouth.GetMode () == "shutdown")
       {
         if ( progress <= maxCallBackShutdown )
-//          flyingman_sprite.SetImage(flyingman_image[Math.Int(progress / 2) % maxCallBackShutdown]);
-          flyingman_sprite.SetImage(flyingman_image[Math.Int(progress / iDisplayPerImage) % maxCallBackShutdown]);
+        {
+          flyingman_sprite.SetImage(scaledImage[Math.Int(progress / iDisplayPerImage) % maxCallBackStartup]);
+        }
         progress++;
       }
         
@@ -86,7 +103,7 @@ fun refresh_callback ()
 
 Plymouth.SetRefreshFunction (refresh_callback);
 
-#----------------------------------------- Dialogue --------------------------------
+//----------------------------------------- Dialogue --------------------------------
 
 status = "normal";
 
@@ -171,7 +188,7 @@ fun display_password_callback (prompt, bullets)
 Plymouth.SetDisplayNormalFunction(display_normal_callback);
 Plymouth.SetDisplayPasswordFunction(display_password_callback);
 
-#----------------------------------------- Progress Bar --------------------------------
+//----------------------------------------- Progress Bar --------------------------------
 
 progress_box.image = Image("progress_box.png");
 progress_box.sprite = Sprite(progress_box.image);
@@ -203,7 +220,7 @@ fun progress_callback (duration, progress)
 
 Plymouth.SetBootProgressFunction(progress_callback);
 
-#----------------------------------------- Quit --------------------------------
+//----------------------------------------- Quit --------------------------------
 
 fun quit_callback ()
 {
@@ -212,7 +229,7 @@ fun quit_callback ()
 
 Plymouth.SetQuitFunction(quit_callback);
 
-#----------------------------------------- Message --------------------------------
+//----------------------------------------- Message --------------------------------
 
 message_sprite = Sprite();
 message_sprite.SetPosition(10, 10, 10000);

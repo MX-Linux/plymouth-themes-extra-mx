@@ -1,3 +1,9 @@
+plymouth-themes-mx (23.06.07) mx; urgency=medium
+
+  * update MXLiveLogo theme (dynamic scaling, CharlesV)
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Tue, 04 Jul 2023 20:58:53 -0400
+
 plymouth-themes-mx (23.06.06) mx; urgency=medium
 
   * do not rebuild initramfs while running live 
