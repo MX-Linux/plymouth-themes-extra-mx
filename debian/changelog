@@ -1,3 +1,9 @@
+plymouth-themes-mx (23.07.01) mx; urgency=medium
+
+  * fix border color around logo
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 07 Jul 2023 07:59:22 -0400
+
 plymouth-themes-mx (23.06.07) mx; urgency=medium
 
   * update MXLiveLogo theme (dynamic scaling, CharlesV)
